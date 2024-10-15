@@ -4,14 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js",
-    "start": "node index.js",
+    "dist": "npx tsc",
+    "dev": "nodemon src/index.ts",
+    "start": "node dist/index.js",
     "prepare": "husky"
   },
   "author": "vionsys",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^22.7.5",
     "husky": "^9.1.6",
-    "lint-staged": "^15.2.10"
+    "lint-staged": "^15.2.10",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
   }
 }
